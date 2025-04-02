@@ -5,8 +5,10 @@ title: "Истинность в отмеченной модели: вопрос�
 
 # Модель Крипке
 
+$\Box p$
+
 {% include figure.html
-    caption="Отмеченная модель \\((M, w_1)\\)"
+    caption="Отмеченная модель $M, w_1$"
     url="/logic/assets/images/M1.png"
     class="row"
 %}
