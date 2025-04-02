@@ -3,6 +3,9 @@ layout: post
 title: "Тесты и упражнения"
 ---
 
+{% assign counter = site.counter | plus: 1 %}
+{% include update_counter.html value=counter %}
+
 {% include figure.html
     caption="Отмеченная модель $$(M, w_1)$$"
     url="/assets/images/M1.png"
@@ -26,5 +29,8 @@ title: "Тесты и упражнения"
 %}
 
 
-**Упражнение**. :star: Приведите пример модели Крипке, в которой ровно 4 мира, и в каждом верно, что 
+:star: **Упражнение** {{ site.counter }}. Приведите пример модели Крипке, в которой ровно 4 мира, и в каждом верно, что 
 - $$\Diamond \Box p \wedge \Diamond \Box \neg p$$
+
+
+ **Упражнение** {{ site.counter }}. Еще упражнение.
