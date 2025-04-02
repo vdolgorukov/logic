@@ -6,7 +6,7 @@ title: "Истинность в отмеченной модели: вопрос�
 # Модель Крипке
 
 {% include figure.html
-    caption="Отмеченная модель \\(M, w_1\\)"
+    caption="Отмеченная модель (M, w1)"
     url="/assets/images/M1.png"
     class="row"
 %}
