@@ -1,8 +1,8 @@
 remote_theme: jasongrimes/jekyll-chapterbook
 
 title: Упражнения: аспекты неклассических логик
-longtitle: Упражнения к курсу "Логика"
-author: В.В.Долгоруков
+longtitle: Упражнения к курсу "Логика" 
+author: В.В. Долгоруков
 email: vdolgorukov@gmail.com
 description: 
   
@@ -16,9 +16,9 @@ baseurl_canonical: https://jasongrimes.github.io/jekyll-chapterbook
 # Set a url to link to a copyright page.
 # Set a start_year to have the copyright render as "start_year - current_year" (if the years are different)
 # Set copyright: false to disable.
-#copyright:
-#  start_year: 
-#  url: /book.html
+copyright:
+  start_year: 
+  url: /book.html
 
 # Customize the link favicon in header. Will be {{site.baseurl}}/{{site.favicon_path}}
 favicon_path: assets/gitbook/images/favicon.ico
