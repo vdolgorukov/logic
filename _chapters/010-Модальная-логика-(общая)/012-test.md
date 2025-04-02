@@ -3,8 +3,10 @@ layout: post
 title: "Упражнения"
 ---
 
+
+
 {% include figure.html
-    caption="Отмеченная модель (M, w1)"
+    caption="Отмеченная модель $$(M, w_1)$$"
     url="/assets/images/M1.png"
     class="row"
 %}
@@ -26,4 +28,4 @@ title: "Упражнения"
 %}
 
 
-:blue_book: **Упражнение**. Приведите пример модели Крипке, в которой ровно 4 мира, и в каждом верно, что $$\Diamond \Box p \wedge \Diamond \Box \neg p$$
+:blue_book: **Упражнение**. Приведите пример модели Крипке, в которой ровно 4 мира, и в каждом верно, что  <p style="text-align:center"> $$\Diamond \Box p \wedge \Diamond \Box \neg p$$ </p>
