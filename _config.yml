@@ -143,5 +143,3 @@ markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
 plugins:
   - jemoji
-
-counter: 0 
