@@ -1,16 +1,74 @@
-{% assign quiz_id = include.id | default: "quiz1" %}
-
-<div class="quiz-container" data-quiz-id="{{ quiz_id }}">
-    <h3 class="quiz-title">{{ include.title | default: "Тест" }}</h3>
+<div class="quiz" id="quiz-{{ include.id }}">
+  <h3>Вопрос {{ include.id }}</h3>
+  <div class="quiz-question">{{ include.question | markdownify }}</div>
+  
+  <form class="quiz-form">
+    {% if include.type == "single" %}
+      {% assign options = include.options | split: "|" %}
+      {% for option in options %}
+        <div class="quiz-option">
+          <input type="radio" name="quiz-{{ include.id }}" id="quiz-{{ include.id }}-{{ forloop.index }}" value="{{ forloop.index }}">
+          <label for="quiz-{{ include.id }}-{{ forloop.index }}">
+            <span class="quiz-option-text">{{ option | markdownify }}</span>
+          </label>
+        </div>
+      {% endfor %}
+    {% elsif include.type == "multiple" %}
+      {% assign options = include.options | split: "|" %}
+      {% for option in options %}
+        <div class="quiz-option">
+          <input type="checkbox" name="quiz-{{ include.id }}" id="quiz-{{ include.id }}-{{ forloop.index }}" value="{{ forloop.index }}">
+          <label for="quiz-{{ include.id }}-{{ forloop.index }}">
+            <span class="quiz-option-text">{{ option | markdownify }}</span>
+          </label>
+        </div>
+      {% endfor %}
+    {% endif %}
     
-    {{ include.questions | markdownify }}
-    
-    <div class="quiz-buttons">
-        <button class="check-quiz">Проверить</button>
-        <button class="reset-quiz">Сбросить</button>
-    </div>
-    
-    <div class="quiz-result"></div>
+    <button type="button" class="quiz-submit" onclick="checkQuiz('quiz-{{ include.id }}', '{{ include.answer }}')">Проверить</button>
+    <div class="quiz-feedback"></div>
+  </form>
 </div>
 
-<script src="{{ '/assets/js/quiz.js' | relative_url }}"></script>
+<style>
+.quiz {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.quiz-question {
+  margin-bottom: 15px;
+}
+.quiz-option {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.quiz-option input {
+  margin-right: 10px;
+}
+.quiz-option-text {
+  display: inline-block;
+}
+.quiz-option-text p {
+  margin: 0;
+}
+.quiz-submit {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.quiz-feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.katex-display {
+  margin: 0.5em 0;
+}
+</style>

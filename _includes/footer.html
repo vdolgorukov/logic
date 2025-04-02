@@ -29,6 +29,64 @@
 <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 -->
 
+<script>
+function checkQuiz(quizId, correctAnswers) {
+  const quiz = document.getElementById(quizId);
+  const inputs = quiz.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+  const feedback = quiz.querySelector('.quiz-feedback');
+  
+  let selected = [];
+  inputs.forEach(input => {
+    if (input.checked) {
+      selected.push(input.value);
+    }
+  });
+  
+  if (selected.length === 0) {
+    feedback.textContent = "Пожалуйста, выберите ответ";
+    feedback.style.color = "red";
+    return;
+  }
+  
+  // Преобразуем строку правильных ответов в массив
+  const correctAnswersArray = correctAnswers.split('|').map(String);
+  
+  // Для одиночного выбора
+  if (quiz.querySelector('input[type="radio"]')) {
+    const isCorrect = selected.length === 1 && correctAnswersArray.includes(selected[0]);
+    if (isCorrect) {
+      feedback.textContent = "✓ Правильно!";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "✗ Неправильно. Попробуйте ещё раз.";
+      feedback.style.color = "red";
+    }
+  } 
+  // Для множественного выбора
+  else {
+    // Сортируем для сравнения (порядок не важен)
+    selected.sort();
+    const correctSorted = [...correctAnswersArray].sort();
+    
+    const isCorrect = selected.length === correctSorted.length && 
+                     selected.every((val, index) => val === correctSorted[index]);
+    
+    if (isCorrect) {
+      feedback.textContent = "✓ Все верно!";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "✗ Не все ответы правильные. Попробуйте ещё раз.";
+      feedback.style.color = "red";
+    }
+  }
+  
+  // Перерендерим формулы в feedback (на случай, если там есть LaTeX)
+  if (window.renderMathInElement) {
+    renderMathInElement(feedback);
+  }
+}
+</script>
+
 {% if site.extra_footer_js %}
 {%- for extra_js in site.extra_header_js -%}
 {%- assign starts_with = extra_js | slice: 0,4  -%}
