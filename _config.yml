@@ -145,3 +145,6 @@ kramdown:
     guess_lang:           true
 syntax_highlighter_style: colorful
 markdown_ext:     markdown,mkdown,mkdn,mkd,md
+
+plugins:
+  - jemoji
