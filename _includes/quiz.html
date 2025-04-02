@@ -1,0 +1,16 @@
+{% assign quiz_id = include.id | default: "quiz1" %}
+
+<div class="quiz-container" data-quiz-id="{{ quiz_id }}">
+    <h3 class="quiz-title">{{ include.title | default: "Тест" }}</h3>
+    
+    {{ include.questions | markdownify }}
+    
+    <div class="quiz-buttons">
+        <button class="check-quiz">Проверить</button>
+        <button class="reset-quiz">Сбросить</button>
+    </div>
+    
+    <div class="quiz-result"></div>
+</div>
+
+<script src="{{ '/assets/js/quiz.js' | relative_url }}"></script>
