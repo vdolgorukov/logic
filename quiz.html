@@ -1,0 +1,92 @@
+<script>
+function checkQuiz(quizId, correctAnswers, hint) {
+  const quiz = document.getElementById(quizId);
+  const inputs = quiz.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+  const feedback = quiz.querySelector('.quiz-feedback');
+  const hintElement = quiz.querySelector('.quiz-hint');
+  
+  // Скрываем подсказку при каждом новом ответе
+  hintElement.style.display = 'none';
+  
+  let selected = [];
+  inputs.forEach(input => {
+    if (input.checked) {
+      selected.push(input.value);
+    }
+  });
+  
+  if (selected.length === 0) {
+    feedback.textContent = "Пожалуйста, выберите ответ";
+    feedback.style.color = "red";
+    return;
+  }
+  
+  // Преобразуем строку правильных ответов в массив
+  const correctAnswersArray = correctAnswers.split('|').map(String);
+  
+  // Для одиночного выбора
+  if (quiz.querySelector('input[type="radio"]')) {
+    const isCorrect = selected.length === 1 && correctAnswersArray.includes(selected[0]);
+    if (isCorrect) {
+      feedback.innerHTML = "✓ Правильно!";
+      feedback.style.color = "green";
+    } else {
+      // Показываем кнопку подсказки только если hint существует и не пустой
+      if (hint && hint.trim() !== '') {
+        feedback.innerHTML = "✗ Неправильно. <span class='show-hint' onclick='toggleHint(\"" + quizId + "\")'>Показать подсказку</span>";
+      } else {
+        feedback.innerHTML = "✗ Неправильно.";
+      }
+      feedback.style.color = "red";
+      if (hint && hint.trim() !== '') {
+        hintElement.innerHTML = "<strong>Подсказка:</strong> " + hint;
+      }
+    }
+  } 
+  // Для множественного выбора
+  else {
+    // Сортируем для сравнения (порядок не важен)
+    selected.sort();
+    const correctSorted = [...correctAnswersArray].sort();
+    
+    const isCorrect = selected.length === correctSorted.length && 
+                     selected.every((val, index) => val === correctSorted[index]);
+    
+    if (isCorrect) {
+      feedback.innerHTML = "✓ Все верно!";
+      feedback.style.color = "green";
+    } else {
+      // Показываем кнопку подсказки только если hint существует и не пустой
+      if (hint && hint.trim() !== '') {
+        feedback.innerHTML = "✗ Не все ответы правильные. <span class='show-hint' onclick='toggleHint(\"" + quizId + "\")'>Показать подсказку</span>";
+      } else {
+        feedback.innerHTML = "✗ Не все ответы правильные.";
+      }
+      feedback.style.color = "red";
+      if (hint && hint.trim() !== '') {
+        hintElement.innerHTML = "<strong>Подсказка:</strong> " + hint;
+      }
+    }
+  }
+  
+  // Перерендерим формулы в feedback и подсказке
+  if (window.renderMathInElement) {
+    renderMathInElement(feedback);
+    renderMathInElement(hintElement);
+  }
+}
+
+function toggleHint(quizId) {
+  const hintElement = document.getElementById(quizId).querySelector('.quiz-hint');
+  if (hintElement.style.display === 'none') {
+    hintElement.style.display = 'block';
+  } else {
+    hintElement.style.display = 'none';
+  }
+  
+  // Перерендерим формулы при показе подсказки
+  if (window.renderMathInElement) {
+    renderMathInElement(hintElement);
+  }
+}
+</script>
