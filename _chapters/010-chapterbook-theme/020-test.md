@@ -3,12 +3,13 @@ layout: post
 title: "Истинность в отмеченной модели: вопросы"
 ---
 
-#Модель Крипке
+# Модель Крипке
 
-<figure class="sign">
-<img src="/logic/assets/images/M1.png" alt="M1" width="300" height="">  
-</figure>
-
+{% include figure.html
+    caption="Отмеченная модель \\((M, w_1)\\)"
+    url="/logic/assets/images/M1.png"
+    class="row"
+%}
 
 {% include quiz.html 
   id="1" 
@@ -17,7 +18,6 @@ title: "Истинность в отмеченной модели: вопрос�
   options="\\(p\\)|\\(q\\)|\\(p \\wedge q\\)|\\( p \to q \\)|\\(q \\to p\\)" 
   answer="1|5" 
 %}
-
 
 {% include quiz.html 
   id="2" 
