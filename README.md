@@ -4,6 +4,134 @@ title: Jekyll Chapterbook Theme
 permalink: /
 ---
 
+This is a [Jekyll](https://jekyllrb.com/) theme based on [GitBook](https://www.gitbook.com/) that adds support for easily organizing pages into book chapters and parts.
+It doesn't rely on any plugins,
+so it works natively with [GitHub Pages](https://pages.github.com/).
+
+This theme was originally based on Tao He’s clever and immensely helpful [jekyll-gitbook](https://github.com/sighingnow/jekyll-gitbook) theme, 
+which in turn is based on an early theme of [GitBook](https://www.gitbook.com/).
+
+## Demos
+
+### Demo on GitHub pages
+
+[jasongrimes.github.io/jekyll-chapterbook/](https://jasongrimes.github.io/jekyll-chapterbook/)
+
+Also see its 
+[GitHub repo](https://github.com/jasongrimes/jekyll-chapterbook).
+
+### Example live site
+
+A live site with a more complex configuration can be seen at 
+[book.fretboardfoundation.com](https://book.fretboardfoundation.com).
+
+Also see its 
+[GitHub repo](https://github.com/jasongrimes/fretboardfoundation).
+
+## Why this theme
+
+This theme is intended to help with gradually writing a book over a long period of time,
+starting from an idea and slowly building out chapters and parts.
+
+It was created with the following objectives:
+
+- Output a portable, flat folder of static html that can be used offline or hosted anywhere.
+- Support all standard parts of a book, including front matter, back matter, chapters, parts, etc.
+- Support frequently reorganizing chapters and parts without breaking existing links.
+- Make the work in progress publicly available in a useful way, 
+  while making drafts that aren't ready for public consumption available without interrupting the flow of completed chapters.
+- Support quickly editing the book on-the-fly, especially from mobile.
+- Run natively on GitHub Pages without custom plugins.
+- Automatically number parts and chapters.
+- Make the markdown source files for each chapter  appear in order on the filesystem and on GitHub,
+  regardless of the chapter name, without having to manually renumber.
+  (This makes it easier to find the page you want to edit.)
+
+## Getting started
+
+### Install the theme
+
+Install this theme [like any other Jekyll theme](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll).
+For example, you could:
+- [Fork this repository](https://github.com/jasongrimes/jekyll-chapterbook/fork) and add your markdown pages to the `_chapters` folder.
+- Use it as a remote theme in your `_config.yml`,
+and then copy in the configuration from  [`jekyll-chapterbook/_config.yml`](https://github.com/jasongrimes/jekyll-chapterbook/blob/master/_config.yml).
+
+```yaml
+remote_theme: jasongrimes/jekyll-chapterbook
+```
+
+### Create some chapters
+
+Each chapter is written in its own [Jekyll page](https://jekyllrb.com/docs/pages/),
+and stored in the [`_chapters/`](https://github.com/jasongrimes/jekyll-chapterbook/tree/master/_chapters) directory.
+
+Name your chapters something like `010-my-chapter.md`, `020-my-next-chapter.md`, etc.
+(The numbers are used to list chapters in the desired order.
+More on that later.)
+
+Create chapters with the following front matter:
+
+```yaml
+---
+title: 
+slug:
+abstract:
+---
+```
+
+- `title`: The chapter name / page title.
+- `slug`: Used to create the page URL. Must be unique.
+- `abstract`: (Optional.) Shown at the top of a chapter and in the full table of contents.
+
+Chapters also support these other front matter variables,
+though they are less common.
+
+- `published`: If `false`, the chapter will not be rendered and will not be included in the chapter numbering. 
+- `disable_toc`: If `true`, don't render the chapter's headings as a table of contents at the top of the page.
+- `class`: Optionally specify CSS class(es) to add to the `<div>` wrapping the page.
+
+Here's the [markdown for an example chapter](https://raw.githubusercontent.com/jasongrimes/jekyll-chapterbook/master/_chapters/010-chapterbook-theme/010-getting-started.md)
+and here is that [example chapter rendered in the demo](https://jasongrimes.github.io/jekyll-chapterbook/getting-started.html).
+
+### Configure GitHub edit links
+
+In the top navigation for every page,
+there's a link to edit that page on GitHub.
+This allows you to make quick edits while reviewing.
+Upon saving the edit form at GitHub,
+your GitHub Pages site can be automatically rebuilt and deployed.
+
+This even works reasonably well from a mobile device.
+The ability to review and edit from mobile is one of my favorite features of this theme.
+
+Configure the GitHub link to your own project in `github_edit` in [_config.yml](https://github.com/jasongrimes/jekyll-chapterbook/blob/master/_config.yml).
+
+```yaml
+github_edit:
+  enabled: true
+  base_url: https://github.com/jasongrimes/jekyll-chapterbook/edit/master/
+```
+
+[See the demo for an example.](https://jasongrimes.github.io/jekyll-chapterbook/)
+
+### Internal links
+
+To help ensure internal links don't break in different environments and support offline browsing,
+links to other pages in markdown
+should use the page's `slug` 
+and **include the .html extension**. 
+For example, to link to a page with `slug: privacy`:
+
+{% raw %}
+```
+See the [privacy policy](privacy.html) for details.
+```
+{% endraw %}
+
+To insert a link to a chapter,
+labeled with the chapter `title` and chapter number,
+use the `chapter-link.html` helper:
 
 For example:
 
