@@ -1,6 +1,6 @@
 ---
 slug: book
-title: Demo Book
+title: Упражнения
 abstract: 
 ---
 
