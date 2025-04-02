@@ -1,6 +1,12 @@
 <figure class="figure color-callout-light with-border {% if include.class %}{{ include.class }}{% endif %}">
-  <a href="{{ site.baseurl }}{{ include.url }}" target="_blank" title="{{ include.caption }} (Click to open figure in a new window.)">
-    <img src="{{ site.baseurl }}{{ include.url }}" width="300" alt="{{ include.caption }}" border="0">
+  <a href="{{ site.baseurl }}{{ include.url }}" target="_blank" title="{{ include.caption | strip_html }} (Click to open figure in a new window.)">
+    <img src="{{ site.baseurl }}{{ include.url }}" width="300" alt="{{ include.caption | strip_html }}" border="0">
   </a>
-  <figcaption class="color-callout-dark">{{ include.caption }}</figcaption>
+  <figcaption class="color-callout-dark">
+    {% if include.caption contains '$$' or include.caption contains '\(' %}
+      <span class="katex-caption">{{ include.caption }}</span>
+    {% else %}
+      {{ include.caption }}
+    {% endif %}
+  </figcaption>
 </figure>
