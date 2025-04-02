@@ -9,7 +9,7 @@ $\Box p$
 
 {% include figure.html
     caption="Отмеченная модель $M, w_1$"
-    url="/logic/assets/images/M1.png"
+    url="/assets/images/M1.png"
     class="row"
 %}
 
