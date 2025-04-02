@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Упражнения"
+title: "Тесты и упражнения"
 ---
 
 {% include figure.html
