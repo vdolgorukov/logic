@@ -9,7 +9,7 @@ description:
 # If baseurl_canonical is set, 
 # a <link rel="canonical"> tag will be added to the head of each page,
 # to disambiguate links for search engines.
-baseurl_canonical: https://jasongrimes.github.io/jekyll-chapterbook
+#baseurl_canonical: https://jasongrimes.github.io/jekyll-chapterbook
 
 # A copyright notice will be shown at the bottom of each page,
 # with the current year and the author name.
