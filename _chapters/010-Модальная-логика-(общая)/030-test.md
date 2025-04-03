@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Тесты и упражнения"
-slug: test
+slug: modal3
 ---
 
 

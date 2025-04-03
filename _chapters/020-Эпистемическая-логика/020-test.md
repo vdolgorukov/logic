@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Тесты и упражнения"
+slug: epistemic2
 ---
 
 
