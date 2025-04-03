@@ -2,6 +2,7 @@
 layout: post
 title: Тесты и упражнения
 slug: modal3
+abstract: 
 ---
 
 
