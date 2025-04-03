@@ -1,11 +1,11 @@
 remote_theme: jasongrimes/jekyll-chapterbook
 
-title: Упражнения 
-longtitle: Упражнения к курсу "Логика"
-author: 
-email: 
+title: Аспекты неклассических логик 
+longtitle: Аспекты неклассических логик: конспект и упражнения
+author: В.В.Долгоруков
+email: v.dolgorukov@gmail.com
 description: >
-  A Jekyll theme based on GitBook with support for chapters and parts.
+  Упражнения к курсу "Аспекты неклассических логик"
 
 # If baseurl_canonical is set, 
 # a <link rel="canonical"> tag will be added to the head of each page,
