@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Тесты и упражнения"
-slug: "Тесты и упражнения"
+slug: test
 ---
 
 
