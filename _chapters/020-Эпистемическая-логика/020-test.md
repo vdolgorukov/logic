@@ -15,11 +15,10 @@ slug: epistemic2
 1. \\(\hat{K}_a p \wedge \hat{K}_a \neg p \\)
 2. \\(K_a p \wedge (p \to q) \wedge \neg K_a q \\)
 3. \\(K_a p \wedge K_a ( p \to q) \wedge \neg K_a q \\) 
-4. \\(\neg K_a p \wedge K_b p \\)
-5. \\(K_a p \wedge K_b \neg p \\)
-6. \\( K_a K_b p \wedge \neg K_a p \\)
-7. \\( K_a K_b p \wedge \neg K_b K_a p \\)
-8. \\( K_b K_a p \wedge K_a K_b p \wedge \neg K_a K_b K_a p \\)
+4. \\(K_a p \wedge K_b \neg p \\)
+5. \\( K_a K_b p \wedge \neg K_a p \\)
+6. \\( K_a K_b p \wedge \neg K_b K_a p \\)
+7. \\( K_b K_a p \wedge K_a K_b p \wedge \neg K_a K_b K_a p \\)
 
 :blue_book: **Упражнение 3**. Постройте отмеченные эпистемические модели для следующих формул (или докажите, что это невозможно): 
 
