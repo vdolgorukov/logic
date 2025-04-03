@@ -5,7 +5,7 @@ title: "Тесты и упражнения"
 
 
 **Упражнение 1**. Постройте отмеченные эпистемические модели для следующих формул:
-1. $p \wedge \neg K_a p$
+1. \((p \wedge \neg K_a p\))
 2. $K_a p \wedge \neg K_a q$
 3. $K_a p \wedge \neg K_b p$
 4. $K_a p \wedge \neg K_a q \wedge K_b q \wedge \neg K_b p$
