@@ -1,5 +1,5 @@
 ---
 layout: post
-title: "Эпистемическая логика"
+title: Эпистемическая логика
 slug: epistemic1
 ---

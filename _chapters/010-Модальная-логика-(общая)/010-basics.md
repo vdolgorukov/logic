@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cемантика Крипке"
+title: Cемантика Крипке
 slug: modal1
 ---
 
