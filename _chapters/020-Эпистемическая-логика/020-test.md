@@ -12,17 +12,14 @@ slug: epistemic2
 4. \\(K_a p \wedge \neg K_a q \wedge K_b q \wedge \neg K_b p\\)
 
 :blue_book: **Упражнение 2**. Постройте отмеченные эпистемические модели для следующих формул (или докажите, что это невозможно): 
-
-1. \\(\neg K_a p \wedge K_b p \\)
-2. \\(\neg K_a p \wedge p \\)
-3. \\( K_a p \wedge \neg p \\)
-4. \\( \hat{K}_a p \wedge \neg p \\)
-5. \\(K_a p \wedge (p \to q) \wedge \neg K_a q \\)
-6. \\(K_a p \wedge K_a ( p \to q) \wedge \neg K_a q \\) 
-7. \\( \hat{K}_a p \wedge \hat{K}_a \neg p \\)
-8. \\( K_a K_b p \wedge \neg K_a p \\)
-9. \\( K_a K_b p \wedge \neg K_b K_a p \\)
-10. \\( K_b K_a p \wedge K_a K_b p \wedge \neg K_a K_b K_a p \\)
+1. \\(\hat{K}_a p \wedge \hat{K}_a \neg p \\)
+2. \\(K_a p \wedge (p \to q) \wedge \neg K_a q \\)
+3. \\(K_a p \wedge K_a ( p \to q) \wedge \neg K_a q \\) 
+4. \\(\neg K_a p \wedge K_b p \\)
+5. \\(K_a p \wedge K_b \neg p \\)
+6. \\( K_a K_b p \wedge \neg K_a p \\)
+7. \\( K_a K_b p \wedge \neg K_b K_a p \\)
+8. \\( K_b K_a p \wedge K_a K_b p \wedge \neg K_a K_b K_a p \\)
 
 :blue_book: **Упражнение 3**. Постройте отмеченные эпистемические модели для следующих формул (или докажите, что это невозможно): 
 
