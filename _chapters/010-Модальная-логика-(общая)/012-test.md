@@ -28,4 +28,5 @@ title: "Тесты и упражнения"
 
 
 :star: **Упражнение**. Приведите пример модели Крипке, в которой ровно 4 мира, и в каждом верно, что 
-- $$\Diamond \Box p \wedge \Diamond \Box \neg p$$
+
+$$\Diamond \Box p \wedge \Diamond \Box \neg p$$
