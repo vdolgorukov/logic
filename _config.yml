@@ -112,7 +112,7 @@ regenerate: true
 plugins:
 #  - jekyll-feed
   - jekyll-readme-index
-#  - jemoji
+  - jemoji
 
 collections:
   chapters:
