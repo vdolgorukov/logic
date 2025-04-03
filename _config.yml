@@ -1,11 +1,10 @@
 remote_theme: jasongrimes/jekyll-chapterbook
 
 title: Аспекты неклассических логик 
-longtitle: Аспекты неклассических логик: конспект и упражнения
+longtitle: Аспекты неклассических логик
 author: В.В.Долгоруков
 email: v.dolgorukov@gmail.com
-description: >
-  Упражнения к курсу "Аспекты неклассических логик"
+description: 
 
 # If baseurl_canonical is set, 
 # a <link rel="canonical"> tag will be added to the head of each page,
