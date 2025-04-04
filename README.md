@@ -10,5 +10,4 @@ permalink: /
 - Автор выражает благодарность Ирине Никитиной, Рамазану Аюпову и Юлии Копчевой за помощь в подготовке материалов
 - Веббук подготовлен при помощи генератора статических сайтов [Jekyll](https://jekyllrb.com/) на основе [шаблона Jason Grimes](https://github.com/vdolgorukov/jekyll-chapterbook). При подготовке кода на JavaScript использовался [DeepSeek](https://www.deepseek.com/).
 
-
 Copyright &copy; 2025 Vitaly Dolgorukov.
