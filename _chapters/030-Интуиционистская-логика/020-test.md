@@ -5,6 +5,22 @@ slug: intuitionistic2
 abstract: 
 ---
 
+
+{% include figure.html
+    caption="Отмеченная модель $(M, x)$"
+    url="/assets/images/Int.png"
+    class="row"
+%}
+
+{% include quiz.html 
+  id="1" 
+  type="multiple" 
+  question="Какие из формул выполняются в $M, x$ на рис. выше ?" 
+  options="$p$|$\neg p$|$\neg \neg p$|$\neg \neg \neg p$" 
+  answer="3" 
+%}
+
+
 :blue_book: **Упражнение**. Какие из указанных формул НЕ являются законами интуиционистской логики высказываний? (Постройте для таких формул контрмодели).
  1. $\neg \neg p \to p$
  2. $p \to \neg \neg p$
