@@ -19,4 +19,4 @@ $$M= (W, \leq, V \rangle)$$
 - $$M, w \models \varphi \vee \psi$$ е.т.е.$$M, w \models \varphi$$ или $$M, w \models \psi$$ 
 - $$M, w \models \varphi \to \psi$$ е.т.е. $$\forall  w' ( (w \leq w' \text{ и } M, w' \models \varphi) \Rightarrow  M, w' \models \psi)$$
 - $$M, w \models \neg \varphi$$ е.т.е. $$\forall  w' ( w \leq w' \to  M, w' \not \models \varphi)$$
-- $$M, w \not \models \bot$$
+- \\(M, w \not \models \bot\\)
