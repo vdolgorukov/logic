@@ -7,7 +7,7 @@ abstract:
 
 
 {% include figure.html
-    caption="Отмеченная модель $(M, x)$"
+    caption="Модель $(M, x)$"
     url="/assets/images/Int.png"
     class="row"
 %}
@@ -20,6 +20,20 @@ abstract:
   answer="3|4" 
 %}
 
+
+{% include figure.html
+    caption="Модель $(M, x)$"
+    url="/assets/images/Int2.png"
+    class="row"
+%}
+
+{% include quiz.html 
+  id="2" 
+  type="multiple" 
+  question="Какие из формул выполняются в $M, x$ на рис. выше ?" 
+  options="$p$|$\neg p$|$\neg \neg p$|$q$|$\neg q$|$\neg \neg q$|$p \to q$|$q \to p$" 
+  answer="3|6" 
+%}
 
 :blue_book: **Упражнение**. Какие из указанных формул НЕ являются законами интуиционистской логики высказываний? (Постройте для таких формул контрмодели).
  1. $\neg \neg p \to p$
