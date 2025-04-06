@@ -10,7 +10,7 @@ $$M= (W, \leq, V \rangle)$$
 где:
 - $$W \not = \varnothing$$ – множество возможных миров (интуитивно мир понимается как состояние знания)
 - $$\leq \; \subseteq W \times W$$ – отношение предпорядка (т.е. оно рефлексивно и транзитивно) 	
-- $$V: Prop \to \Pow(W)$$ такая, что:  если $$w \in V(p)$$ и $$w \leq w'$$, то $$w' \in V(p)$$	
+- $$V: Prop \to \mathcal{P}(W)$$ такая, что:  если $$w \in V(p)$$ и $$w \leq w'$$, то $$w' \in V(p)$$	
 т.е. если $$p$$ истинно в каком-то мире, то $$p$$ истинно и во всех мирах достижимых из данного (информация не теряется). 
 
 
@@ -20,4 +20,6 @@ $$M= (W, \leq, V \rangle)$$
 - $$M, w \models \varphi \vee \psi$$ е.т.е.$$M, w \models \varphi$$ или $$M, w \models \psi$$ 
 - $$M, w \models \varphi \to \psi$$ е.т.е. $$\forall  w' ( (w \leq w' \text{ и } M, w' \models \varphi) \Rightarrow  M, w' \models \psi)$$
 - $$M, w \models \neg \varphi$$ е.т.е. $$\forall  w' ( w \leq w' \to  M, w' \not \models \varphi)$$
-- $M, w \not \models \bot$
+- $$M, w \not \models \bot$$
+
+
