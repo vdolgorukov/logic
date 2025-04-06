@@ -16,8 +16,8 @@ abstract:
   id="1" 
   type="multiple" 
   question="Какие из формул выполняются в $M, x$ на рис. выше ?" 
-  options="$p$|$\neg p$|$\neg \neg p$|$\neg \neg \neg p$" 
-  answer="3" 
+  options="$p$|$\neg p$|$\neg \neg p$|$\neg \neg \neg p$|$p \to q$" 
+  answer="3|5" 
 %}
 
 
