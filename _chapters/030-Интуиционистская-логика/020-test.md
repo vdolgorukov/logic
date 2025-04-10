@@ -16,7 +16,7 @@ abstract:
   id="1" 
   type="multiple" 
   question="Какие из формул выполняются в $M, x$ на рис. выше ?" 
-  options="$p$|$\neg p$|$\neg \neg p$|$p \to q$" 
+  options="$p$|$\neg p$|$\neg \neg p$|$p \to q$|никакие" 
   answer="3|4" 
 %}
 
@@ -31,8 +31,8 @@ abstract:
   id="2" 
   type="multiple" 
   question="Какие из формул выполняются в $M, x$ на рис. выше ?" 
-  options="$p$|$\neg p$|$\neg \neg p$|$q$|$\neg q$|$\neg \neg q$|$p \to q$|$q \to p$" 
-  answer="3|6" 
+  options="$p$|$\neg p$|$\neg \neg p$|$q$|$\neg q$|$\neg \neg q$|$p \to q$|$q \to p$|никакие" 
+  answer="9" 
 %}
 
 :blue_book: **Упражнение**. Какие из указанных формул НЕ являются законами интуиционистской логики высказываний? (Постройте для таких формул контрмодели).
