@@ -1,0 +1,17 @@
+---
+layout: post
+title: Тесты и упражнения
+slug: other
+abstract: 
+---
+
+
+{% include quiz.html 
+  id="" 
+  type="multiple" 
+  question="Какие из утверждений верны?" 
+  options="$\{a, b \} = \{b, a\}$|$\{a, b, b, b, b, c \} = \{b, a, c\}$|$ a \in \{a, \{b\}, c \}$|$ b \in \{a, \{b\}, c \}$|$ \{a\} \in \{a, \{b\}, c \}$
+$ \{b\} \in \{a, \{b\}, c \}$|$ \{a\} \subseteq \{a, \{b\}, c \}$|$ \{b\} \subseteq \{a, \{b\}, c \}$|$ \{ \{b\} \} \subseteq \{a, \{b\}, c \}$|$ \{a, b, c\} \subseteq \{a, \{b\}, c \}$" 
+  answer="9" 
+%}
+

@@ -5,6 +5,7 @@ slug: modal3
 abstract: 
 ---
 
+# Упражнения (в рзаработке, не проверены)
 
 {% include figure.html
     caption="Отмеченная модель $$(M, w_1)$$"
