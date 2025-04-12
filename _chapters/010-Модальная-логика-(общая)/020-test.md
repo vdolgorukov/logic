@@ -9,8 +9,10 @@ abstract:
 
 ## Вопрос 1
 
+**Какие из формул выполняются в $$(M, w_1)$$" на рис. ниже)?**
+
 {% include figure.html
-    caption="Отмеченная модель $$(M, w_1)$$"
+    caption=""
     url="/assets/images/M1.png"
     class="row"
 %}
@@ -18,7 +20,7 @@ abstract:
 {% include quiz.html 
   id="1.1" 
   type="multiple" 
-  question="Какие из формул выполняются в $(M, w_1)$ на рис. выше ?" 
+  question="" 
   options="$p$|$q$|$p \wedge q$|$p \to q$|$q \to p$" 
   answer="1|5" 
 %}
@@ -26,7 +28,7 @@ abstract:
 {% include quiz.html 
   id="1.2" 
   type="multiple" 
-  question="Какие из формул выполняются в $(M, w_1)$ на рис. выше ?" 
+  question="" 
   options="$\Box p$|$\Box q$|$\Diamond p$|$ \Diamond q $" 
   answer="2|3|4" 
 %}
@@ -34,7 +36,7 @@ abstract:
 {% include quiz.html 
   id="1.3" 
   type="multiple" 
-  question="Какие из формул выполняются в $(M, w_1)$ на рис. выше ?" 
+  question="" 
   options="$\Box(p \wedge q)$|$\Box(p \to q)$|$\Box(q \to p)$|" 
   answer="2" 
 %}
@@ -42,7 +44,7 @@ abstract:
 {% include quiz.html 
   id="1.4" 
   type="multiple" 
-  question="Какие из формул выполняются в $(M, w_1)$ на рис. выше ?" 
+  question="" 
   options="$\Diamond(p \wedge q)$|$\Diamond(p \to q)$|$\Diamond(q \to p)$" 
   answer="1|2|3" 
 %}
@@ -50,7 +52,7 @@ abstract:
 {% include quiz.html 
   id="1.5" 
   type="multiple" 
-  question="Какие из формул выполняются в $(M, w_1)$ на рис. выше ?" 
+  question="" 
   options="$\Diamond\Diamond p$|$\Diamond \Diamond q$|$\Diamond\Diamond(p \wedge q)$|$\Diamond\Diamond(p \to q)$|$\Diamond\Diamond(q \to p)$" 
   answer="1|2|3|4|5" 
 %}
@@ -58,7 +60,7 @@ abstract:
 {% include quiz.html 
   id="1.6" 
   type="multiple" 
-  question="Какие из формул выполняются в $(M, w_1)$ на рис. выше ?" 
+  question="" 
   options="$\Box\Box p$|$\Box\Box q$|$\Box\Box(p \wedge q)$|$\Box\Box(p \to q)$|$\Box\Box(q \to p)$" 
   answer="1|2|5" 
 %}
@@ -66,7 +68,7 @@ abstract:
 {% include quiz.html 
   id="1.7" 
   type="multiple" 
-  question="Какие из формул выполняются в $(M, w_1)$ на рис. выше ?" 
+  question="" 
   options="$\Diamond\Box p$|$\Diamond\Box q$|$\Diamond\Box(p \wedge q)$|$\Diamond\Box(p \to q)$|$\Diamond\Box(q \to p)$"
   answer="1|2|3|4|5" 
 %}
@@ -74,18 +76,19 @@ abstract:
 {% include quiz.html 
   id="1.8" 
   type="multiple" 
-  question="Какие из формул выполняются в $(M, w_1)$ на рис. выше ?" 
+  question="" 
   options="$\Box\Diamond p$|$\Box\Diamond q$|$\Box\Diamond(p \wedge q)$|$\Box\Diamond(p \to q)$|$\Box\Diamond(q \to p)$"
   answer="1|2|3|4|5" 
 %}
 
 ## Вопрос 2
 {% include figure.html
-    caption="Модель $$M_2$$"
+    caption=""
     url="/assets/images/M2.png"
     class="row"
 %}
 
 ## Упражнения
 :star: **Упражнение**. Приведите пример модели Крипке, в которой ровно 4 мира, и в каждом верно, что 
+
 $$\Diamond \Box p \wedge \Diamond \Box \neg p$$ (1)
