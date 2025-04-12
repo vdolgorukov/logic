@@ -2,7 +2,7 @@
 layout: post
 title: Тесты и упражнения
 slug: other
-abstract: 
+abstract: Тесты и упражнения
 ---
 
 
