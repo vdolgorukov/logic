@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.19)  3 APR 2025 18:21
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.19)  11 APR 2025 00:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -224,7 +224,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip49
 )
-(/Users/admin/Documents/GitHub/logic/_chapters/020-Эпистемическая-логика/.texpadtmp/020-test.aux)
+(/Users/admin/Documents/GitHub/logic/_chapters/030-Интуиционистская-логика/.texpadtmp/020-test.aux)
 \openout1 = `020-test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -357,47 +357,52 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
 LaTeX Info: Redefining \nameref on input line 14.
- (/Users/admin/Documents/GitHub/logic/_chapters/020-Эпистемическая-логика/.texpadtmp/020-test.out) (/Users/admin/Documents/GitHub/logic/_chapters/020-Эпистемическая-логика/.texpadtmp/020-test.out)
+ (/Users/admin/Documents/GitHub/logic/_chapters/030-Интуиционистская-логика/.texpadtmp/020-test.out) (/Users/admin/Documents/GitHub/logic/_chapters/030-Интуиционистская-логика/.texpadtmp/020-test.out)
 \@outlinefile=\write3
 \openout3 = `020-test.out'.
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 33.
 
-Overfull \hbox (34.98183pt too wide) in paragraph at lines 47--48
-[]\TU/HelveticaNeue(0)/m/n/12 :blue_book: \TU/HelveticaNeue(0)/b/n/12 Упражнение 4\TU/HelveticaNeue(0)/m/n/12 . Постройте эпистемические модели, которые бы описывали следующую
+Overfull \hbox (17.15434pt too wide) in paragraph at lines 51--73
+[]\TU/HelveticaNeue(0)/m/n/12 :blue_book: \TU/HelveticaNeue(0)/b/n/12 Упражнение\TU/HelveticaNeue(0)/m/n/12 . Какие из указанных формул НЕ являются законами интуиционистской
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 50.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 50.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 50.
 
-Overfull \hbox (6.1421pt too wide) in paragraph at lines 50--51
-[]\TU/HelveticaNeue(0)/m/n/12 На столе лежит конверт, в котором возможно лежит письмо (пусть $$p:=$$ $\OML/cmm/m/it/12 <$$<$\TU/HelveticaNeue(0)/m/n/12 в конверте
+Overfull \hbox (0.86586pt too wide) in paragraph at lines 74--76
+[]\TU/HelveticaNeue(0)/m/n/12 :blue_book: \TU/HelveticaNeue(0)/b/n/12 Упражнение\TU/HelveticaNeue(0)/m/n/12 . Докажите, что закон Пирса не является законом интуиционистской
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
+
+Overfull \hbox (66.45543pt too wide) in paragraph at lines 80--87
+[]\TU/HelveticaNeue(0)/m/n/12 :blue_book: \TU/HelveticaNeue(0)/b/n/12 Упражнение\TU/HelveticaNeue(0)/m/n/12 . Найдите результат перевода в $S4$ для следующих формул интуиционистской
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
 (/usr/local/texlive/2020basic/texmf-dist/tex/generic/stringenc/se-ascii-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 ) [1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
- (/Users/admin/Documents/GitHub/logic/_chapters/020-Эпистемическая-логика/.texpadtmp/020-test.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 59.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
+ (/Users/admin/Documents/GitHub/logic/_chapters/030-Интуиционистская-логика/.texpadtmp/020-test.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `020-test.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 11284 strings out of 480935
- 222918 string characters out of 5916713
- 526323 words of memory out of 5000000
- 28592 multiletter control sequences out of 15000+600000
- 535586 words of font info for 53 fonts, out of 8000000 for 9000
+ 11280 strings out of 480935
+ 222795 string characters out of 5916713
+ 525323 words of memory out of 5000000
+ 28590 multiletter control sequences out of 15000+600000
+ 535570 words of font info for 51 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 44i,4n,70p,450b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,4n,70p,257b,307s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/admin/Documents/GitHub/logic/_chapters/020-Эпистемическая-логика/.texpadtmp/020-test.pdf (1 page).
+Output written on /Users/admin/Documents/GitHub/logic/_chapters/030-Интуиционистская-логика/.texpadtmp/020-test.pdf (1 page).
