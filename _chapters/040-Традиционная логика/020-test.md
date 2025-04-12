@@ -26,6 +26,6 @@ $\varnothing \subseteq \\{ \\{ \varnothing \\} \\}$|
 $\varnothing \subseteq \varnothing$|
 $\varnothing \in \varnothing$
 " 
-answer="" 
+answer="1|3|4|5" 
 %}
 
