@@ -15,8 +15,8 @@ abstract:
 {% include quiz.html 
   id="1" 
   type="multiple" 
-  question="Какие из формул выполняются в \\((M, w_1)\\) на рис. выше ?" 
-  options="\\(p\\)|\\(q\\)|\\(p \\wedge q\\)|\\( p \to q \\)|\\(q \\to p\\)" 
+  question="Какие из формул выполняются в $(M, w_1)$ на рис. выше ?" 
+  options="$p$|$q$|$p \wedge q$|$p \to q$|$q \to p$" 
   answer="1|5" 
 %}
 
@@ -32,7 +32,7 @@ abstract:
   id="3" 
   type="multiple" 
   question="Какие из формул выполняются в \\((M, w_1)\\) на рис. выше ?" 
-  options="\\(\\Box(p \\wedge q)\\|\\(\\Box(p \\to q)\\)|\\(\\Box(q \\to p)\\)|" 
+  options="$Box(p \wedge q)$|\\(\\Box(p \\to q)\\)|\\(\\Box(q \\to p)\\)|" 
   answer="2" 
 %}
 
@@ -48,7 +48,7 @@ abstract:
   id="5" 
   type="multiple" 
   question="Какие из формул выполняются в \\((M, w_1)\\) на рис. выше ?" 
-  options="\\(\\Diamond\\Diamond p\\)|\(\\Diamond\\Diamond q\\)|\\(\\Diamond\\Diamond(p \\wedge q)\\)|\\(\\Diamond\\Diamond(p \\to q)\\)|\\(\\Diamond\\Diamond(q \\to p)\\)" 
+  options="\\(\\Diamond\\Diamond p\\)|$\Diamond \Diamond q$|\\(\\Diamond\\Diamond(p \\wedge q)\\)|\\(\\Diamond\\Diamond(p \\to q)\\)|\\(\\Diamond\\Diamond(q \\to p)\\)" 
   answer="1|2|3|4|5" 
 %}
 
