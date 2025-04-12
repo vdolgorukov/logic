@@ -28,6 +28,54 @@ abstract:
   answer="2|3|4" 
 %}
 
+{% include quiz.html 
+  id="3" 
+  type="multiple" 
+  question="Какие из формул выполняются в \\((M, w_1)\\) на рис. выше ?" 
+  options="\\(\\Box(p \\wedge q)\\|\\(\\Box(p \\to q)\\)|\\(\\Box(q \\to p)\\)|" 
+  answer="2" 
+%}
+
+{% include quiz.html 
+  id="4" 
+  type="multiple" 
+  question="Какие из формул выполняются в \\((M, w_1)\\) на рис. выше ?" 
+  options="\\(\\Diamond(p \\wedge q)\\)|\\(\\Diamond(p \\to q)\\)|\\(\\Diamond(q \\to p)\\)" 
+  answer="1|2|3" 
+%}
+
+{% include quiz.html 
+  id="5" 
+  type="multiple" 
+  question="Какие из формул выполняются в \\((M, w_1)\\) на рис. выше ?" 
+  options="\\(\\Diamond\\Diamond p\\)|\(\\Diamond\\Diamond q\\)|\\(\\Diamond\\Diamond(p \\wedge q)\\)|\\(\\Diamond\\Diamond(p \\to q)\\)|\\(\\Diamond\\Diamond(q \\to p)\\)" 
+  answer="1|2|3|4|5" 
+%}
+
+{% include quiz.html 
+  id="6" 
+  type="multiple" 
+  question="Какие из формул выполняются в \\((M, w_1)\\) на рис. выше ?" 
+  options="\\(\\Box\\Box p\\)|\\(\\Box\\Box q\\)|\\(\\Box\\Box(p \\wedge q)\\)|\\(\\Box\\Box(p \\to q)\\)|\\(\\Box\\Box(q \\to p)\\)" 
+  answer="1|2|5" 
+%}
+
+{% include quiz.html 
+  id="7" 
+  type="multiple" 
+  question="Какие из формул выполняются в \\((M, w_1)\\) на рис. выше ?" 
+  options="\\(\\Diamond\\Box p\\)|\\(\\Diamond\\Box q\\)|\\(\\Diamond\\Box(p \\wedge q)\\)|\\(\\Diamond\\Box(p \\to q)\\)|\\(\\Diamond\\Box(q \\to p)\\)"
+  answer="1|2|3|4|5" 
+%}
+
+{% include quiz.html 
+  id="8" 
+  type="multiple" 
+  question="Какие из формул выполняются в \\((M, w_1)\\) на рис. выше ?" 
+  options="\\(\\Box\\Diamond p\\)|\\(\\Box\\Diamond q\\)|\\(\\Box\\Diamond(p \\wedge q)\\)|\\(\\Box\\Diamond(p \\to q)\\)|\\(\\Box\\Diamond(q \\to p)\\)"
+  answer="1|2|3|4|5" 
+%}
+
 
 {% include figure.html
     caption="Модель $$M_2$$"
