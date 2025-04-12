@@ -15,3 +15,17 @@ $ \\{b\\} \in \\{a, \\{b\\}, c \\}$|$ \\{a\\} \subseteq \\{a, \\{b\\}, c \\}$|$ 
   answer="1|2|3|6|7|9" 
 %}
 
+{% include quiz.html 
+  id="" 
+  type="multiple" 
+  question="Какие из утверждений верны?" 
+  options="$\varnothing \in \\{ \varnothing \\}$|
+$\varnothing \in \\{ \\{ \varnothing \\} \\}$|
+$\varnothing \subseteq \\{ \varnothing \\}$|
+$\varnothing \subseteq \\{ \\{ \varnothing \\} \\}$|
+$\varnothing \subseteq \varnothing$|
+$\varnothing \in \varnothing$
+" 
+answer="" 
+%}
+
