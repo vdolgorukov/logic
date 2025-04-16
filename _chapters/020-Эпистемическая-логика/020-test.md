@@ -16,49 +16,43 @@ abstract:
 **Верна ли в отмеченной эпистемической модели Крипке $(M, w_1)$ (рисунок выше) следующая формула:**
 
 {% include quiz.html 
-  id="1.1" 
   type="single" 
-  question="$K_a p$?" 
+  question="$K_a p$" 
   options="да|нет" 
   answer="1" 
 %}
  
 {% include quiz.html 
-  id="1.2" 
   type="single" 
-  question="$K_b p$?" 
+  question="$K_b p$" 
   options="да|нет" 
   answer="2" 
 %} 
 
 {% include quiz.html 
-  id="1.3" 
   type="single" 
-  question="$\hat{K}_b p$?" 
+  question="$\hat{K}_b p$" 
   options="да|нет" 
   answer="1" 
 %} 
 
 {% include quiz.html 
-  id="1.4" 
   type="single" 
-  question="$K_b K_a p$?" 
+  question="$K_b K_a p$" 
   options="да|нет" 
   answer="2" 
 %} 
 
 {% include quiz.html 
-  id="1.5" 
   type="single" 
-  question="$K_b K_a \neg p$?" 
+  question="$K_b K_a \neg p$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="1.6" 
   type="single" 
-  question="$K_b (K_a p \vee K_a \neg p)$?" 
+  question="$K_b (K_a p \vee K_a \neg p)$" 
   options="да|нет" 
   answer="1" 
 %}

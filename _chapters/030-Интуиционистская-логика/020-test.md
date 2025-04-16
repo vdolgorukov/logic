@@ -8,42 +8,38 @@ abstract:
 
 ## Упражнение 1 
 
-**Верна ли в отмеченной интуиционсисткой модели Крипке $(M_1, x)$ (рисунок ниже) следующая формула?** 
-
 {% include figure.html
     caption="Модель $(M_1, x)$"
     url="/assets/images/Int.png"
     class="row"
 %}
 
+**Верна ли в отмеченной интуиционсисткой модели Крипке $(M_1, x)$ (рисунок выше) следующая формула?** 
+
 {% include quiz.html 
-  id="1.1" 
   type="single" 
-  question="$p$?" 
+  question="$p$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="1.2" 
   type="single" 
-  question="$\neg p$?" 
+  question="$\neg p$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="1.3" 
   type="single" 
-  question="$\neg \neg p$?" 
+  question="$\neg \neg p$" 
   options="да|нет" 
   answer="1" 
 %}
 
 {% include quiz.html 
-  id="1.4" 
   type="single" 
-  question="$p \to q$?" 
+  question="$p \to q$" 
   options="да|нет" 
   answer="1" 
 %}
@@ -51,72 +47,64 @@ abstract:
 
 ## Упражнение 2
 
-**Верна ли в отмеченной интуиционсисткой модели Крипке $(M_2, x)$ (рисунок ниже) следующая формула?**
-
 {% include figure.html
     caption="Модель $(M_2, x)$"
     url="/assets/images/Int2.png"
     class="row"
 %}
 
+**Верна ли в отмеченной интуиционсисткой модели Крипке $(M_2, x)$ (рисунок выше) следующая формула?**
+
 {% include quiz.html 
-  id="2.1" 
   type="single" 
-  question="$p$?" 
+  question="$p$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="2.2" 
   type="single" 
-  question="$\neg p$?" 
+  question="$\neg p$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="2.3" 
   type="single" 
-  question="$\neg \neg p$?" 
+  question="$\neg \neg p$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="2.4" 
   type="single" 
-  question="$q$?" 
+  question="$q$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="2.5" 
   type="single" 
-  question="$\neg q$?" 
+  question="$\neg q$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="2.6" 
   type="single" 
-  question="$\neg \neg q$?" 
+  question="$\neg \neg q$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="2.7" 
   type="single" 
-  question="$p \to q$?" 
+  question="$p \to q$" 
   options="да|нет" 
   answer="2" 
 %}
 
 {% include quiz.html 
-  id="2.8" 
   type="single" 
   question="$q \to p$" 
   options="да|нет" 

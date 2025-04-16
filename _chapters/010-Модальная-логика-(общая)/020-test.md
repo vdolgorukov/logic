@@ -15,7 +15,6 @@ abstract:
 
 **Какие из формул выполняются в отмеченной модели Крипке $(M, w_1)$ (на рисунке выше)?**
 
-1.1
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -23,7 +22,6 @@ abstract:
   answer="1|5" 
 %}
 
-1.2
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -31,7 +29,6 @@ abstract:
   answer="2|3|4" 
 %}
 
-1.3
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -39,7 +36,6 @@ abstract:
   answer="2" 
 %}
 
-1.4
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -47,7 +43,6 @@ abstract:
   answer="1|2|3" 
 %}
 
-1.5
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -55,7 +50,6 @@ abstract:
   answer="1|2|3|4|5" 
 %}
 
-1.6
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -63,7 +57,6 @@ abstract:
   answer="1|5" 
 %}
 
-1.7
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -71,7 +64,6 @@ abstract:
   answer="1|2|3|4|5" 
 %}
 
-1.8
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -89,87 +81,86 @@ abstract:
 
 **В каких мирах модели Крипке $M_2$ (на рисунке выше) выполняется следующая формула:**
 
- 
 {% include quiz.html
   type="multiple"
-  question="$\Box p$?"
+  question="$\Box p$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="2|3|4"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\Diamond p$?"
+  question="$\Diamond p$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="1|2|4"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\Box p \wedge \Diamond q$?"
+  question="$\Box p \wedge \Diamond q$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="2"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\neg \Box (p \to q)$?"
+  question="$\neg \Box (p \to q)$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="1|4"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$p \lor \Diamond q$?"
+  question="$p \lor \Diamond q$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="1|2|3"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\Diamond \Diamond p$?"
+  question="$\Diamond \Diamond p$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="1|2"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\Box(p \lor q)$?"
+  question="$\Box(p \lor q)$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="1|2|3|4"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\Diamond (p \to q)$ ?"
+  question="$\Diamond (p \to q)$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="1|2"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\Box \bot$?"
+  question="$\Box \bot$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="3"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\Diamond \top$?"
+  question="$\Diamond \top$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="1|2|4"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\Diamond \Box \bot$?"
+  question="$\Diamond \Box \bot$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="1|4"
 %}
 
 {% include quiz.html
   type="multiple"
-  question="$\bot$?"
+  question="$\bot$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="5"
 %}
