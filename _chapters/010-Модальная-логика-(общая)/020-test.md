@@ -94,10 +94,91 @@ abstract:
 {% include quiz.html
   id="2.1"
   type="multiple"
-  question="В каких мирах модели $M_2$ выполняется формула $(\Box p)$?"
+  question="В каких мирах модели $M_2$ выполняется формула $\Box p$?"
   options= "$w_1$|$w_2$|$w_3$|$w_4$"
   answer="2|3|4"
 %}
+
+{% include quiz.html
+  id="2.2"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула $\Diamond p$?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="1|2|4"
+%}
+
+{% include quiz.html
+  id="2.3"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула $\Box p \wedge \Diamond q$?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="2"
+%}
+
+{% include quiz.html
+  id="2.4"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула $\neg \Box (p \to q)?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="1|4"
+%}
+
+{% include quiz.html
+  id="2.5"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула $p \lor \Diamond q$?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="1|2|4"
+%}
+
+{% include quiz.html
+  id="2.6"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула $\Diamond \Diamond p$?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="1|2"
+%}
+
+{% include quiz.html
+  id="2.7"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула $\Box(p \lor q)$?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="1|2|3|4"
+%}
+
+{% include quiz.html
+  id="2.8"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула $(\Diamond (p \to q)$ ?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="1|2"
+%}
+
+{% include quiz.html
+  id="2.9"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула $\Box \bot$?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="3"
+%}
+
+{% include quiz.html
+  id="2.10"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула  $\Diamond \top$?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="1|2|4"
+%}
+
+{% include quiz.html
+  id="2.11"
+  type="multiple"
+  question="В каких мирах модели $M_2$ выполняется формула $\Diamond \Box \bot$?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$"
+  answer="1|4"
+%}
+
 
 
 ## Упражнения
