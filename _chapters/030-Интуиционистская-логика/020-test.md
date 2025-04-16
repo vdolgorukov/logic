@@ -6,7 +6,9 @@ abstract:
 ---
 
 
-## Упражнение 1 Верна ли в отмеченной интуиционсисткой модели Крипке $(M, x)$ (рисунок ниже) следующая формула? 
+## Упражнение 1 
+
+**Верна ли в отмеченной интуиционсисткой модели Крипке $(M, x)$ (рисунок ниже) следующая формула?** 
 
 {% include figure.html
     caption="Модель $(M, x)$"
@@ -22,16 +24,29 @@ abstract:
   answer="2" 
 %}
 
-
 {% include quiz.html 
-  id="1" 
-  type="multiple" 
-  question="Какие из формул выполняются в $M, x$ на рис. выше ?" 
-  options="$p$|$\neg p$|$\neg \neg p$|$p \to q$|никакие" 
-  answer="3|4" 
+  id="1.2" 
+  type="single" 
+  question="$\neg p$?" 
+  options="да|нет" 
+  answer="2" 
 %}
 
+{% include quiz.html 
+  id="1.3" 
+  type="single" 
+  question="$\neg \neg p$?" 
+  options="да|нет" 
+  answer="1" 
+%}
 
+{% include quiz.html 
+  id="1.4" 
+  type="single" 
+  question="$p \to q$?" 
+  options="да|нет" 
+  answer="1" 
+%}
 
 {% include figure.html
     caption="Модель $(M, x)$"
