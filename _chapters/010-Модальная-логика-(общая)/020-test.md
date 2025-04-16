@@ -179,6 +179,15 @@ abstract:
   answer="1|4"
 %}
 
+{% include quiz.html
+  id="2.12"
+  type="multiple"
+  question="$\bot$?"
+  options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
+  answer="5"
+%}
+
+
 ## Упражнение 3 :star:
 Приведите пример модели Крипке, в которой ровно 4 мира, и в каждом верно, что 
 
