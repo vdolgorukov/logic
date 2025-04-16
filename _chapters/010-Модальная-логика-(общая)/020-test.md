@@ -61,7 +61,7 @@ abstract:
   id="1.6" 
   type="multiple" 
   question="" 
-  options="$\Box\Box p$|$\Box\Box q$|$\Box\Box(p \wedge q)$|$\Box\Box(p \to q)$|$\Box\Box(q \to p)|ни одна$" 
+  options="$\Box\Box p$|$\Box\Box q$|$\Box\Box(p \wedge q)$|$\Box\Box(p \to q)$|$\Box\Box(q \to p)$|ни одна" 
   answer="1|5" 
 %}
 
@@ -69,7 +69,7 @@ abstract:
   id="1.7" 
   type="multiple" 
   question="" 
-  options="$\Diamond\Box p$|$\Diamond\Box q$|$\Diamond\Box(p \wedge q)$|$\Diamond\Box(p \to q)$|$\Diamond\Box(q \to p)|ни одна$"
+  options="$\Diamond\Box p$|$\Diamond\Box q$|$\Diamond\Box(p \wedge q)$|$\Diamond\Box(p \to q)$|$\Diamond\Box(q \to p)$|ни одна"
   answer="1|2|3|4|5" 
 %}
 
@@ -77,7 +77,7 @@ abstract:
   id="1.8" 
   type="multiple" 
   question="" 
-  options="$\Box\Diamond p$|$\Box\Diamond q$|$\Box\Diamond(p \wedge q)$|$\Box\Diamond(p \to q)$|$\Box\Diamond(q \to p)|ни одна$"
+  options="$\Box\Diamond p$|$\Box\Diamond q$|$\Box\Diamond(p \wedge q)$|$\Box\Diamond(p \to q)$|$\Box\Diamond(q \to p)$|ни одна"
   answer="1|2|3|4|5" 
 %}
 
