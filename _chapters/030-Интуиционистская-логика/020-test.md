@@ -6,11 +6,22 @@ abstract:
 ---
 
 
+## Упражнение 1 Верна ли в отмеченной интуиционсисткой модели Крипке $(M, x)$ (рисунок ниже) следующая формула? 
+
 {% include figure.html
     caption="Модель $(M, x)$"
     url="/assets/images/Int.png"
     class="row"
 %}
+
+{% include quiz.html 
+  id="1.1" 
+  type="multiple" 
+  question="$p$?" 
+  options="да|нет" 
+  answer="2" 
+%}
+
 
 {% include quiz.html 
   id="1" 
@@ -19,6 +30,7 @@ abstract:
   options="$p$|$\neg p$|$\neg \neg p$|$p \to q$|никакие" 
   answer="3|4" 
 %}
+
 
 
 {% include figure.html
