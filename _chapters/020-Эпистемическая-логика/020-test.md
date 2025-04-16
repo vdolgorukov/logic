@@ -9,6 +9,12 @@ abstract:
 
 **Верна ли в отмеченной эпистемической модели Крипке $(M, w_1)$ (рисунок ниже) следующая формула:**
 
+{% include figure.html
+    caption="Модель $(M, w_1)$"
+    url="/assets/images/epistemic.png"
+    class="row"
+%}
+
 {% include quiz.html 
   id="1.1" 
   type="single" 
