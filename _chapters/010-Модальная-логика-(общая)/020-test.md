@@ -118,7 +118,7 @@ abstract:
 {% include quiz.html
   id="2.4"
   type="multiple"
-  question="В каких мирах модели $M_2$ выполняется формула $\neg \Box (p \to q)?"
+  question="В каких мирах модели $M_2$ выполняется формула $\neg \Box (p \to q)$?"
   options= "$w_1$|$w_2$|$w_3$|$w_4$"
   answer="1|4"
 %}
