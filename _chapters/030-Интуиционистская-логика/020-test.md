@@ -17,6 +17,7 @@ abstract:
 **Верна ли в отмеченной интуиционсисткой модели Крипке $(M_1, x)$ (рисунок выше) следующая формула?** 
 
 {% include quiz.html 
+  id="1.1"
   type="single" 
   question="$p$" 
   options="да|нет" 
@@ -24,6 +25,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.2"
   type="single" 
   question="$\neg p$" 
   options="да|нет" 
@@ -31,6 +33,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.3"
   type="single" 
   question="$\neg \neg p$" 
   options="да|нет" 
@@ -38,6 +41,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.4"
   type="single" 
   question="$p \to q$" 
   options="да|нет" 
@@ -56,6 +60,7 @@ abstract:
 **Верна ли в отмеченной интуиционсисткой модели Крипке $(M_2, x)$ (рисунок выше) следующая формула?**
 
 {% include quiz.html 
+  id="2.1"
   type="single" 
   question="$p$" 
   options="да|нет" 
@@ -63,6 +68,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="2.2"
   type="single" 
   question="$\neg p$" 
   options="да|нет" 
@@ -70,6 +76,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="2.3"
   type="single" 
   question="$\neg \neg p$" 
   options="да|нет" 
@@ -77,6 +84,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="2.4"
   type="single" 
   question="$q$" 
   options="да|нет" 
@@ -84,6 +92,7 @@ abstract:
 %}
 
 {% include quiz.html 
+id="2.5"
   type="single" 
   question="$\neg q$" 
   options="да|нет" 
@@ -91,6 +100,7 @@ abstract:
 %}
 
 {% include quiz.html 
+id="2.6"
   type="single" 
   question="$\neg \neg q$" 
   options="да|нет" 
@@ -98,6 +108,7 @@ abstract:
 %}
 
 {% include quiz.html 
+ id="2.7"
   type="single" 
   question="$p \to q$" 
   options="да|нет" 
@@ -105,6 +116,7 @@ abstract:
 %}
 
 {% include quiz.html 
+   id="2.8"
   type="single" 
   question="$q \to p$" 
   options="да|нет" 

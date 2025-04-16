@@ -90,6 +90,7 @@ abstract:
 **В каких мирах модели Крипке $M_2$ (на рисунке выше) выполняется следующая формула:**
 
 {% include quiz.html
+  id="2.1"
   type="multiple"
   question="$\Box p$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -97,6 +98,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.2"
   type="multiple"
   question="$\Diamond p$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -104,6 +106,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.3"
   type="multiple"
   question="$\Box p \wedge \Diamond q$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -111,6 +114,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.4"
   type="multiple"
   question="$\neg \Box (p \to q)$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -118,6 +122,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.5"
   type="multiple"
   question="$p \lor \Diamond q$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -125,6 +130,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.6"
   type="multiple"
   question="$\Diamond \Diamond p$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -132,6 +138,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.7"
   type="multiple"
   question="$\Box(p \lor q)$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -139,6 +146,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.8"
   type="multiple"
   question="$\Diamond (p \to q)$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -146,6 +154,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.9"
   type="multiple"
   question="$\Box \bot$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -153,6 +162,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.10"
   type="multiple"
   question="$\Diamond \top$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -160,6 +170,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.11"
   type="multiple"
   question="$\Diamond \Box \bot$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
@@ -167,6 +178,7 @@ abstract:
 %}
 
 {% include quiz.html
+  id="2.12"
   type="multiple"
   question="$\bot$"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
