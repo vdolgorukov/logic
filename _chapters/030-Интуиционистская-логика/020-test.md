@@ -16,7 +16,7 @@ abstract:
 
 {% include quiz.html 
   id="1.1" 
-  type="multiple" 
+  type="single" 
   question="$p$?" 
   options="да|нет" 
   answer="2" 
