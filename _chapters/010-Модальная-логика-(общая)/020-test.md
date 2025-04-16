@@ -95,7 +95,7 @@ abstract:
   id="2.1"
   type="multiple"
   question="В каких мирах модели выполняется формула $(\Box p)$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”2|3|4”
 %}
 
@@ -103,7 +103,7 @@ abstract:
   id="2.2"
   type="multiple"
   question="В каких мирах модели выполняется формула $(\Diamond p)$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2$)|$(w_3)$|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”1|2|4”
 %}
 
@@ -111,7 +111,7 @@ abstract:
   id="2.3"
   type="multiple"
   question="В каких мирах модели выполняется формула $(\Box p \wedge \Diamond q)$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)|$(w_3)|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”2”
 %}
 
@@ -119,7 +119,7 @@ abstract:
   id="2.4"
   type="multiple"
   question="В каких мирах модели выполняется формула $(\neg \Box (p \to q))$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”1|4”
 %}
 
@@ -127,16 +127,15 @@ abstract:
   id="2.5"
   type="multiple"
   question="В каких мирах модели выполняется формула $(p \lor \Diamond q)$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”1|2|4”
 %}
 
 {% include quiz.html
   id="2.6"
   type="multiple"
-  question="В каких мирах модели выполняется формула $(\Diamond 
-  \Diamond p)$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  question="В каких мирах модели выполняется формула $(\Diamond \Diamond p)$ на рис. 2 ?"
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”1|2”
 %}
 
@@ -144,7 +143,7 @@ abstract:
   id="2.7"
   type="multiple"
   question="В каких мирах модели выполняется формула $(\Box(p \lor q))$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”1|2|3|4”
 %}
 
@@ -152,7 +151,7 @@ abstract:
   id="2.8"
   type="multiple"
   question="В каких мирах модели выполняется формула $(\Diamond(p \to q)$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”1|2”
 %}
 
@@ -160,7 +159,7 @@ abstract:
   id="2.9"
   type="multiple"
   question="В каких мирах модели выполняется формула $(\Box \bot)$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”3”
 %}
 
@@ -168,7 +167,7 @@ abstract:
   id="2.10"
   type="multiple"
   question="В каких мирах модели выполняется формула $(\Diamond \top)$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”1|2|4”
 %}
 
@@ -176,7 +175,7 @@ abstract:
   id="2.11"
   type="multiple"
   question="В каких мирах модели выполняется формула $(\Diamond \Box \bot)$ на рис. 2 ?"
-  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  options= “$w_1$|$w_2$|$w_3$|$w_4$”
   answer=”1|4”
 %}
 
