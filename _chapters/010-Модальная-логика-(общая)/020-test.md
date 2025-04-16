@@ -94,7 +94,7 @@ abstract:
 {% include quiz.html
   id="2.1"
   type="multiple"
-  question="$\Box p$?"
+  question="**$$\Box p$$**?"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="2|3|4"
 %}
@@ -150,7 +150,7 @@ abstract:
 {% include quiz.html
   id="2.8"
   type="multiple"
-  question="$(\Diamond (p \to q)$ ?"
+  question="$\Diamond (p \to q)$ ?"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
   answer="1|2"
 %}
