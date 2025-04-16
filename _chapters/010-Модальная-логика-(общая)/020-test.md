@@ -62,7 +62,7 @@ abstract:
   type="multiple" 
   question="Какие из формул выполняются в $(M, w_1)$" 
   options="$\Box\Box p$|$\Box\Box q$|$\Box\Box(p \wedge q)$|$\Box\Box(p \to q)$|$\Box\Box(q \to p)$" 
-  answer="1|2|5" 
+  answer="1|5" 
 %}
 
 {% include quiz.html 
@@ -82,11 +82,104 @@ abstract:
 %}
 
 ## Вопрос 2
+
+**В каких мирах модели $M_2$ на рис.ниже выполняется следующая формула?**
+
 {% include figure.html
     caption=""
     url="/assets/images/M2.png"
     class="row"
 %}
+ 
+{% include quiz.html
+  id="2.1"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\Box p)$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  answer=”2|3|4”
+%}
+
+{% include quiz.html
+  id="2.2"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\Diamond p)$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2$)|$(w_3)$|$(w_4)$”
+  answer=”1|2|4”
+%}
+
+{% include quiz.html
+  id="2.3"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\Box p \wedge \Diamond q)$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)|$(w_3)|$(w_4)$”
+  answer=”2”
+%}
+
+{% include quiz.html
+  id="2.4"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\neg \Box (p \to q))$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  answer=”1|4”
+%}
+
+{% include quiz.html
+  id="2.5"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(p \lor \Diamond q)$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  answer=”1|2|4”
+%}
+
+{% include quiz.html
+  id="2.6"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\Diamond 
+  \Diamond p)$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  answer=”1|2”
+%}
+
+{% include quiz.html
+  id="2.7"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\Box(p \lor q))$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  answer=”1|2|3|4”
+%}
+
+{% include quiz.html
+  id="2.8"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\Diamond(p \to q)$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  answer=”1|2”
+%}
+
+{% include quiz.html
+  id="2.9"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\Box \bot)$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  answer=”3”
+%}
+
+{% include quiz.html
+  id="2.10"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\Diamond \top)$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  answer=”1|2|4”
+%}
+
+{% include quiz.html
+  id="2.11"
+  type="multiple"
+  question="В каких мирах модели выполняется формула $(\Diamond \Box \bot)$ на рис. 2 ?"
+  options= “$(w_1)$|$(w_2)$|$(w_3)$|$(w_4)$”
+  answer=”1|4”
+%}
+
 
 ## Упражнения
 :star: **Упражнение**. Приведите пример модели Крипке, в которой ровно 4 мира, и в каждом верно, что 
