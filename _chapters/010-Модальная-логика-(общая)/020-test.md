@@ -15,7 +15,8 @@ abstract:
 
 **Какие из формул выполняются в отмеченной модели Крипке $(M, w_1)$ (на рисунке выше)?**
 
-{% include quiz.html 
+{% include quiz.html
+  id="1.1"
   type="multiple" 
   question="" 
   options="$p$|$q$|$p \wedge q$|$p \to q$|$q \to p$|ни одна" 
@@ -23,6 +24,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.2"
   type="multiple" 
   question="" 
   options="$\Box p$|$\Box q$|$\Diamond p$|$ \Diamond q$|ни одна" 
@@ -30,6 +32,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.3"
   type="multiple" 
   question="" 
   options="$\Box(p \wedge q)$|$\Box(p \to q)$|$\Box(q \to p)$|ни одна" 
@@ -37,6 +40,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.4"
   type="multiple" 
   question="" 
   options="$\Diamond(p \wedge q)$|$\Diamond(p \to q)$|$\Diamond(q \to p)$|ни одна" 
@@ -44,6 +48,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.5"
   type="multiple" 
   question="" 
   options="$\Diamond\Diamond p$|$\Diamond \Diamond q$|$\Diamond\Diamond(p \wedge q)$|$\Diamond\Diamond(p \to q)$|$\Diamond\Diamond(q \to p)$|ни одна" 
@@ -51,6 +56,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.6"
   type="multiple" 
   question="" 
   options="$\Box\Box p$|$\Box\Box q$|$\Box\Box(p \wedge q)$|$\Box\Box(p \to q)$|$\Box\Box(q \to p)$|ни одна" 
@@ -58,6 +64,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.7"
   type="multiple" 
   question="" 
   options="$\Diamond\Box p$|$\Diamond\Box q$|$\Diamond\Box(p \wedge q)$|$\Diamond\Box(p \to q)$|$\Diamond\Box(q \to p)$|ни одна"
@@ -65,6 +72,7 @@ abstract:
 %}
 
 {% include quiz.html 
+  id="1.8"
   type="multiple" 
   question="" 
   options="$\Box\Diamond p$|$\Box\Diamond q$|$\Box\Diamond(p \wedge q)$|$\Box\Diamond(p \to q)$|$\Box\Diamond(q \to p)$|ни одна"
