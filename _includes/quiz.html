@@ -1,74 +1,250 @@
-<div class="quiz" id="quiz-{{ include.id }}">
-  <p><b>{{ include.id }}</b></p>
-  <div class="quiz-question">{{ include.question | markdownify }}</div>
+---
+layout: default
+---
+
+{% include mathjax.html %}
+
+<div class="quiz-container">
+  <h1>{{ page.title }}</h1>
   
-  <form class="quiz-form">
-    {% if include.type == "single" %}
-      {% assign options = include.options | split: "|" %}
-      {% for option in options %}
-        <div class="quiz-option">
-          <input type="radio" name="quiz-{{ include.id }}" id="quiz-{{ include.id }}-{{ forloop.index }}" value="{{ forloop.index }}">
-          <label for="quiz-{{ include.id }}-{{ forloop.index }}">
-            <span class="quiz-option-text">{{ option | markdownify }}</span>
+  <div class="quiz-description">
+    {{ content }}
+  </div>
+
+  <div class="questions">
+    {% for question in page.questions %}
+    <div class="question" id="question-{{ forloop.index }}">
+      <div class="question-text">{{ question.text | markdownify }}</div>
+      
+      {% if question.type == "single" %}
+        <div class="options single-answer">
+          {% for option in question.options %}
+          <label>
+            <input type="radio" name="question-{{ forloop.parentloop.index }}" value="{{ forloop.index }}">
+            <span class="option-content">{{ option | markdownify }}</span>
           </label>
+          {% endfor %}
         </div>
-      {% endfor %}
-    {% elsif include.type == "multiple" %}
-      {% assign options = include.options | split: "|" %}
-      {% for option in options %}
-        <div class="quiz-option">
-          <input type="checkbox" name="quiz-{{ include.id }}" id="quiz-{{ include.id }}-{{ forloop.index }}" value="{{ forloop.index }}">
-          <label for="quiz-{{ include.id }}-{{ forloop.index }}">
-            <span class="quiz-option-text">{{ option | markdownify }}</span>
+      {% elsif question.type == "multiple" %}
+        <div class="options multiple-answers">
+          {% for option in question.options %}
+          <label>
+            <input type="checkbox" name="question-{{ forloop.parentloop.index }}" value="{{ forloop.index }}">
+            <span class="option-content">{{ option | markdownify }}</span>
           </label>
+          {% endfor %}
         </div>
-      {% endfor %}
-    {% endif %}
-    
-    <button type="button" class="quiz-submit" onclick="checkQuiz('quiz-{{ include.id }}', '{{ include.answer }}')">Проверить</button>
-    <div class="quiz-feedback"></div>
-  </form>
+      {% endif %}
+      
+      <button class="check-answer" data-question="{{ forloop.index }}" data-type="{{ question.type }}" 
+              data-answer="{% if question.type == 'single' %}{{ question.answer }}{% else %}{{ question.answer | join: ',' }}{% endif %}">
+        Проверить ответ
+      </button>
+      <div class="feedback"></div>
+      <div class="explanation">{{ question.explanation | markdownify }}</div>
+    </div>
+    {% endfor %}
+  </div>
+  
+  <div class="quiz-results">
+    <button class="show-results">Показать результаты</button>
+    <div class="results-summary"></div>
+  </div>
 </div>
 
 <style>
-.quiz {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 20px 0;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
-.quiz-question {
+
+.question {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.question-text {
+  font-weight: bold;
   margin-bottom: 15px;
 }
-.quiz-option {
-  margin: 10px 0;
+
+.options {
+  margin: 15px 0;
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.options label {
+  display: inline-flex;
   align-items: center;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  transition: background-color 0.2s;
 }
-.quiz-option input {
-  margin-right: 10px;
+
+.options label:hover {
+  background-color: #e0e0e0;
 }
-.quiz-option-text {
-  display: inline-block;
+
+.option-content {
+  margin-left: 5px;
 }
-.quiz-option-text p {
-  margin: 0;
-}
-.quiz-submit {
-  background: #4CAF50;
+
+.check-answer {
+  padding: 8px 15px;
+  background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
 }
-.quiz-feedback {
-  margin-top: 10px;
-  font-weight: bold;
+
+.check-answer:hover {
+  background-color: #45a049;
 }
-.katex-display {
-  margin: 0.5em 0;
+
+.feedback {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.correct {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.incorrect {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.explanation {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-left: 4px solid #5bc0de;
+  display: none;
+}
+
+.show-results {
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.show-results:hover {
+  background-color: #286090;
+}
+
+.results-summary {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+/* Для мобильных устройств - возвращаем вертикальное расположение */
+@media (max-width: 600px) {
+  .options {
+    flex-direction: column;
+  }
+  
+  .options label {
+    display: flex;
+  }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Проверка ответа
+  document.querySelectorAll('.check-answer').forEach(button => {
+    button.addEventListener('click', function() {
+      const questionNum = this.dataset.question;
+      const questionType = this.dataset.type;
+      const correctAnswer = this.dataset.answer;
+      const questionDiv = document.querySelector(`#question-${questionNum}`);
+      const feedbackDiv = questionDiv.querySelector('.feedback');
+      const explanationDiv = questionDiv.querySelector('.explanation');
+      
+      let userAnswer;
+      if (questionType === 'single') {
+        const selected = questionDiv.querySelector(`input[name="question-${questionNum}"]:checked`);
+        userAnswer = selected ? selected.value : null;
+      } else {
+        const selected = Array.from(questionDiv.querySelectorAll(`input[name="question-${questionNum}"]:checked`))
+                              .map(el => el.value);
+        userAnswer = selected.join(',');
+      }
+      
+      if (!userAnswer) {
+        feedbackDiv.textContent = 'Пожалуйста, выберите ответ';
+        feedbackDiv.style.display = 'block';
+        feedbackDiv.className = 'feedback';
+        return;
+      }
+      
+      const isCorrect = userAnswer === correctAnswer;
+      
+      feedbackDiv.textContent = isCorrect ? 'Правильно!' : 'Неправильно. Попробуйте еще раз.';
+      feedbackDiv.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
+      feedbackDiv.style.display = 'block';
+      
+      if (!isCorrect) {
+        explanationDiv.style.display = 'block';
+      }
+    });
+  });
+  
+  // Показать все результаты
+  document.querySelector('.show-results').addEventListener('click', function() {
+    let correctCount = 0;
+    const totalQuestions = document.querySelectorAll('.question').length;
+    
+    document.querySelectorAll('.question').forEach(question => {
+      const checkButton = question.querySelector('.check-answer');
+      const questionNum = checkButton.dataset.question;
+      const questionType = checkButton.dataset.type;
+      const correctAnswer = checkButton.dataset.answer;
+      
+      let userAnswer;
+      if (questionType === 'single') {
+        const selected = question.querySelector(`input[name="question-${questionNum}"]:checked`);
+        userAnswer = selected ? selected.value : null;
+      } else {
+        const selected = Array.from(question.querySelectorAll(`input[name="question-${questionNum}"]:checked`))
+                              .map(el => el.value);
+        userAnswer = selected.join(',');
+      }
+      
+      const isCorrect = userAnswer === correctAnswer;
+      if (isCorrect) correctCount++;
+      
+      const feedbackDiv = question.querySelector('.feedback');
+      const explanationDiv = question.querySelector('.explanation');
+      
+      feedbackDiv.textContent = isCorrect ? 'Правильно!' : 'Неправильно.';
+      feedbackDiv.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
+      feedbackDiv.style.display = 'block';
+      
+      explanationDiv.style.display = 'block';
+    });
+    
+    const resultsDiv = document.querySelector('.results-summary');
+    resultsDiv.textContent = `Результат: ${correctCount} из ${totalQuestions} правильных ответов (${Math.round(correctCount / totalQuestions * 100)}%)`;
+  });
+});
+</script>
