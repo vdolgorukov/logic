@@ -15,6 +15,7 @@ abstract:
 
 **Какие из формул выполняются в отмеченной модели Крипке $(M, w_1)$ (на рисунке выше)?**
 
+1.1
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -22,6 +23,7 @@ abstract:
   answer="1|5" 
 %}
 
+1.2
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -29,6 +31,7 @@ abstract:
   answer="2|3|4" 
 %}
 
+1.3
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -36,6 +39,7 @@ abstract:
   answer="2" 
 %}
 
+1.4
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -43,6 +47,7 @@ abstract:
   answer="1|2|3" 
 %}
 
+1.5
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -50,6 +55,7 @@ abstract:
   answer="1|2|3|4|5" 
 %}
 
+1.6
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -57,6 +63,7 @@ abstract:
   answer="1|5" 
 %}
 
+1.7
 {% include quiz.html 
   type="multiple" 
   question="" 
@@ -64,6 +71,7 @@ abstract:
   answer="1|2|3|4|5" 
 %}
 
+1.8
 {% include quiz.html 
   type="multiple" 
   question="" 
