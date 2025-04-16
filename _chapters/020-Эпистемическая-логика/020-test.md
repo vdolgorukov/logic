@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Тесты и упражнения
+title: Упражнения
 slug: epistemic2
 abstract: 
 ---
