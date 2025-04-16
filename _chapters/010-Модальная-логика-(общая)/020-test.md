@@ -126,7 +126,7 @@ abstract:
   type="multiple"
   question="$p \lor \Diamond q$?"
   options= "$w_1$|$w_2$|$w_3$|$w_4$|ни в одном"
-  answer="1|2|4"
+  answer="1|2|3"
 %}
 
 {% include quiz.html
