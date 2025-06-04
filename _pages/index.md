@@ -11,3 +11,9 @@ subtitle: Конспект и упражнения
 - Веббук подготовлен при помощи генератора статических сайтов [Jekyll](https://jekyllrb.com/) на основе [шаблона Jason Grimes](https://github.com/vdolgorukov/jekyll-chapterbook). При подготовке кода на JavaScript использовался [DeepSeek](https://www.deepseek.com/).
 
 Copyright &copy; 2025 Vitaly Dolgorukov.
+
+
+-[1](https://docs.google.com/forms/d/e/1FAIpQLSdNOJ92fdqvav1W61S1Z3wDV9rLdrnkkgjvqV49FNy_JpjPrg/viewform?usp=sharing&ouid=116205718865287688365
+)
+-[2](https://docs.google.com/forms/d/e/1FAIpQLSfA-UTuqKLTCdlVlNq652g0UP9pTJ5ZhRyndLYremOpzzJXNQ/viewform?usp=sharing&ouid=116205718865287688365
+)
