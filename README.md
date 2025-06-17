@@ -12,11 +12,3 @@ permalink: /
 
 
 Copyright &copy; 2025 Vitaly Dolgorukov.
-
-
-
-
-- [1](https://docs.google.com/forms/d/e/1FAIpQLSdNOJ92fdqvav1W61S1Z3wDV9rLdrnkkgjvqV49FNy_JpjPrg/viewform?usp=sharing&ouid=116205718865287688365
-)
-- [2](https://docs.google.com/forms/d/e/1FAIpQLSdNOJ92fdqvav1W61S1Z3wDV9rLdrnkkgjvqV49FNy_JpjPrg/viewform?usp=sharing&ouid=116205718865287688365
-)
