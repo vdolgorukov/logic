@@ -12,6 +12,8 @@ subtitle: Конспект и упражнения
 
 Copyright &copy; 2025 Vitaly Dolgorukov.
 
-1
-2
-3
+[1](https://docs.google.com/forms/d/e/1FAIpQLScwzvkZ4uFRsdqjZgiYlIsC6yp1NejHWph7XKvTTQm7s2IuYw/viewform)
+
+[2](https://docs.google.com/forms/d/e/1FAIpQLSdfWh5cOeMNm1vy2_efDnWmjbQ_70_H2MfPPXlECobtA5HYcA/viewform)
+
+[3](https://docs.google.com/forms/d/e/1FAIpQLSetasb2uA4uxQUc_0S526UbhOXvgfy167g5H5Nhs3fFiEcoRA/viewform)
