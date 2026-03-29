@@ -1,28 +1,31 @@
 <div class="quiz" id="quiz-{{ include.id }}">
-  <p><b>Вопрос {{ include.id }}</b></p>
   <div class="quiz-question">{{ include.question | markdownify }}</div>
   
   <form class="quiz-form">
     {% if include.type == "single" %}
-      {% assign options = include.options | split: "|" %}
-      {% for option in options %}
-        <div class="quiz-option">
-          <input type="radio" name="quiz-{{ include.id }}" id="quiz-{{ include.id }}-{{ forloop.index }}" value="{{ forloop.index }}">
-          <label for="quiz-{{ include.id }}-{{ forloop.index }}">
-            <span class="quiz-option-text">{{ option | markdownify }}</span>
-          </label>
-        </div>
-      {% endfor %}
+      <div class="quiz-options-container">
+        {% assign options = include.options | split: "|" %}
+        {% for option in options %}
+          <div class="quiz-option">
+            <input type="radio" name="quiz-{{ include.id }}" id="quiz-{{ include.id }}-{{ forloop.index }}" value="{{ forloop.index }}">
+            <label for="quiz-{{ include.id }}-{{ forloop.index }}">
+              <span class="quiz-option-text">{{ option | markdownify }}</span>
+            </label>
+          </div>
+        {% endfor %}
+      </div>
     {% elsif include.type == "multiple" %}
-      {% assign options = include.options | split: "|" %}
-      {% for option in options %}
-        <div class="quiz-option">
-          <input type="checkbox" name="quiz-{{ include.id }}" id="quiz-{{ include.id }}-{{ forloop.index }}" value="{{ forloop.index }}">
-          <label for="quiz-{{ include.id }}-{{ forloop.index }}">
-            <span class="quiz-option-text">{{ option | markdownify }}</span>
-          </label>
-        </div>
-      {% endfor %}
+      <div class="quiz-options-container">
+        {% assign options = include.options | split: "|" %}
+        {% for option in options %}
+          <div class="quiz-option">
+            <input type="checkbox" name="quiz-{{ include.id }}" id="quiz-{{ include.id }}-{{ forloop.index }}" value="{{ forloop.index }}">
+            <label for="quiz-{{ include.id }}-{{ forloop.index }}">
+              <span class="quiz-option-text">{{ option | markdownify }}</span>
+            </label>
+          </div>
+        {% endfor %}
+      </div>
     {% endif %}
     
     <button type="button" class="quiz-submit" onclick="checkQuiz('quiz-{{ include.id }}', '{{ include.answer }}')">Проверить</button>
@@ -40,14 +43,22 @@
 }
 .quiz-question {
   margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.quiz-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 .quiz-option {
-  margin: 10px 0;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 .quiz-option input {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .quiz-option-text {
   display: inline-block;
