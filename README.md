@@ -13,6 +13,3 @@ permalink: /
 
 Copyright &copy; 2025 Vitaly Dolgorukov.
 
-1
-2
-3
